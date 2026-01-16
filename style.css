@@ -3,6 +3,7 @@
     --whiteColor: #ffffff;
     --blackColor: #000000;
     --greyColor: #1a1a1a;
+    --lightGreyColor: #626262;
     --primaryFont: "Arial", sans-serif;
     --secondaryFont: "sans-serif", sans-serif;
     --smallTitleFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -38,6 +39,7 @@ header {
     z-index: 1000;
     background-color: var(--greyColor);
     box-shadow: 0px -6px 20px;
+    top: 0;
 }
 
 #header-div {
@@ -150,6 +152,48 @@ h1, h2, h3, .small-title {
     font-family: var(--primaryFont);
     text-transform: uppercase;
     margin: 1rem auto;
+}
+
+section p {
+    color: var(--lightGreyColor);
+    font-family: var(--secondaryFont);
+    line-height: 1.75rem;
+}
+
+.call-to-action {
+    all: unset;
+    font-family: var(--primaryFont);
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: fit-content;
+    padding: 1rem 2rem;
+    color: var(--whiteColor);
+    background-color: var(--strongColor);
+    margin-top: 1rem;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.section-servicio .common-padding {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.section-servicio .text-container {
+    margin-top: 1rem;
+}
+
+.servicio-img {
+    width: 100%;
+}
+
+.section-servicio .button-container {
+    margin-top: 1rem;
 }
 
 @media (min-width: 992px) {

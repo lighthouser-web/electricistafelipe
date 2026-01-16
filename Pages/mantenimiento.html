@@ -2,25 +2,74 @@
 <html lang="es-AR">
     <head>
         <meta charset="UTF-8">
-        <title>Your Business</title>
-        <meta name="keywords" content="keyword-1, keyword-2">
-        <meta name="description" content="your description here...">
+        <title>Mantenimiento eléctrico para el hogar</title>
+        <meta name="keywords" content="Mantenimiento, electrico">
+        <meta name="description" content="Servicio de mantenimiento eléctrico domiciliario en zona sur: reparaciones, instalaciones y soluciones generales. Seguridad, calidad y profesionalismo.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Páginas Estáticas">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="" type="image/x-icon">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" href="../faivcon.ico" type="image/x-icon">
     </head>
     <body>
         <header>
-            <nav>
-                
-            </nav>
+            <div id="header-div">
+                <div id="header-top">
+                    <a href="index.html">
+                        <picture >
+                            <source srcset="../Imagenes/Marca/electricista-felipe-logo-mobile.png" media="(max-width: 992px)" type="image/webp">
+                            <source srcset="../Imagenes/Marca/electricista-felipe-logo.png" media="(min-width: 993px)" type="image/webp">
+                            <img id="header-logo" src="../Imagenes/Marca/electricista-felipe-logo-mobile.png" alt="Logo de Electricista Felipe">
+                        </picture>
+                    </a>
+                    <div id="hamburguer-menu-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#servicios">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
-            
+            <section class="section-servicio">
+                <div class="common-padding">
+                    <div class="text-container">
+                        <h1>Mantenimiento eléctrico</h1>
+                        <p>
+                            Ofrecemos mantenimiento eléctrico general que garantiza la seguridad y eficiencia de toda la instalación de tu hogar. Realizamos una inspección completa, limpieza y ajuste de componentes, identificación de riesgos, y revisión del tablero principal y tomacorrientes. Previene fallas, cortocircuitos y optimiza el consumo energético, brindando tranquilidad y protección para tu familia y electrodomésticos.
+                        </p>
+                        <div class="button-container">
+                            <button class="call-to-action">
+                                Contactarse
+                            </button>
+                        </div>
+                    </div>
+                    <picture>
+                        <source srcset="../Imagenes/tableros-electricos-mobile.webp" media="(max-width: 992px)" type="image/webp">
+                            <source srcset="../Imagenes/tableros-electricos.webp" media="(min-width: 993px)" type="image/webp">
+                            <img class="servicio-img" src="../Imagenes/tableros-electricos-mobile.webp" alt="Tablero eléctrico siendo inspeccionado.">
+                    </picture>
+                </div>
+            </section>
         </main>
         <footer>
 
         </footer>
+        <script src="../Scripts/hamburgerMenu.js"></script>
     </body>
 </html>
