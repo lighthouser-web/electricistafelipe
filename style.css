@@ -27,6 +27,7 @@ button {
 
 img {
     width: 100%;
+    border-radius: 20px;
 }
 
 * {
@@ -316,6 +317,17 @@ main {
 
 #contactanos-medios path {
     fill: var(--whiteColor);
+}
+
+#section-nosotros-page .common-padding {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#section-nosotros-page .common-padding section {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 footer {
