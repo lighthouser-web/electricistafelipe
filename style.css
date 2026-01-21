@@ -234,16 +234,16 @@ main {
     line-height: 0.75rem;
 }
 
-.splide__arrow {
+.section-productos-relacionados .splide__arrow {
     background: none !important;
 }
 
-.splide__arrow.splide__arrow--prev svg {
+.section-productos-relacionados .splide__arrow.splide__arrow--prev svg {
     position: absolute;
     right: 28px;
 }
 
-.splide__arrow.splide__arrow--next svg {
+.section-productos-relacionados .splide__arrow.splide__arrow--next svg {
     position: absolute;
     left: 28px !important;
 }
