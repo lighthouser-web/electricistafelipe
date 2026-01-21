@@ -1,5 +1,6 @@
 :root {
     --strongColor: #ffc300;
+    --secondaryColor: #ff7b00;
     --whiteColor: #ffffff;
     --blackColor: #000000;
     --greyColor: #1a1a1a;
@@ -171,12 +172,20 @@ section p {
     height: fit-content;
     padding: 1rem 2rem;
     color: var(--whiteColor);
-    background-color: var(--strongColor);
+    background-color: var(--secondaryColor);
     margin-top: 1rem;
+}
+
+.call-to-action:hover {
+    background-color: var(--strongColor);
 }
 
 main {
     margin-top: 100px;
+}
+
+.section-servicio {
+    margin-bottom: 2rem;
 }
 
 .section-servicio .common-padding {
@@ -194,6 +203,165 @@ main {
 
 .section-servicio .button-container {
     margin-top: 1rem;
+}
+
+.li-productos-relacionados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.li-productos-relacionados img {
+    border-radius: 20px;
+}
+
+.li-productos-relacionados h3 {
+    margin: 0.5rem auto;
+    max-width: 20ch;
+}
+
+.li-productos-relacionados p {
+    line-height: 0.75rem;
+}
+
+footer {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    background-color: #212121;
+    color: var(--whiteColor);
+}
+
+footer .section-padding {
+    padding-bottom: 0;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: var(--strongColor);
+    transition: all 0.2s ease;
+}
+
+#footer-div-top picture {
+    margin: 0;
+    padding: 0 4%;
+}
+
+#footer-div-top-logo {
+    margin: 0;
+    padding: 1rem 0;
+    max-width: 80%;
+    height: auto;
+    align-self: left;
+    border-radius: 0;
+}
+
+#footer-div-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-bottom: 1rem;
+}
+
+.footer-section {
+    text-align: center;
+    margin: 1rem 0;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+footer h4 {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    line-height: 1.5rem;
+    color: var(--whiteColor);
+}
+
+footer ul li {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+#footer-div-top-contacto li {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#footer-div-top-contacto .contacto-title {
+    font-weight: bold;
+    margin-left: 0;
+}
+
+#footer-div-top-contacto .contacto-text {
+    margin-left: 0;
+}
+
+#footer-top-seguinos ul {
+    display: flex;
+    justify-content: left;
+    gap: clamp(4%, 1.25rem, 8%);
+    align-content: center;
+}
+
+.social-media-link svg {
+    width: 2rem;
+    height: auto;
+}
+
+.social-media-link path {
+    fill: var(--whiteColor);
+}
+
+.social-media-link svg:hover path {
+    fill: var(--strongColor);
+    transition: all 0.2s ease;
+}
+
+footer hr {
+    color: initial;
+}
+
+#footer-p-copyright {
+    max-width: none;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.wsp-flotante {
+    width: 82px;
+    height: 82px;
+    cursor: pointer;
+    border-radius: 60px;
+    border: none;
+    background-color: #25D366;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    translate: -30% 0;
+    z-index: 10000;
+    display: grid;
+    place-content: center;
+    transition: all 0.3s;
+    padding: 0.75rem;
+    box-shadow: 0px 0px 6px rgb(99, 99, 99);
+}
+
+.wsp-flotante svg {
+    width: 100%;
+    height: auto;
+}
+
+.wsp-flotante svg path {
+    fill: var(--whiteColor);
 }
 
 @media (min-width: 992px) {
@@ -247,5 +415,39 @@ main {
 
     nav ul a {
         font-size: 1.125rem;
+    }
+
+    footer .common-padding {
+        padding-bottom: 0;
+    }
+
+    #footer-div-top {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    #footer-div-top > * {
+        width: 20%;
+        gap: 1rem;
+    }
+
+    #footer-div-top-logo {
+        max-width: 30%;
+    }
+
+    .footer-section {
+        text-align: left;
+    }
+
+    #footer-top-seguinos ul {
+        text-align: left;
+    }
+
+    footer hr {
+        display: none;
+        border: solid 1px rgb(61, 61, 61);
+        width: 70%;
     }
 }
