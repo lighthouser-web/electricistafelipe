@@ -185,8 +185,101 @@ section p {
     background-color: var(--strongColor);
 }
 
+.small-title {
+    color: var(--greyColor);
+}
+
+.small-title + h2 {
+    margin-top: 0.25rem;
+}
+
 main {
     margin-top: 100px;
+}
+
+#main-homepage {
+    margin-top: 60px;
+}
+
+#section-statement h1, #section-statement p {
+    color: var(--whiteColor);
+}
+
+#section-statement h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+#section-statement p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 32ch;
+    margin-left: 0;
+}
+
+#section-statement .button-container {
+    margin-top: 0.5rem;
+}
+
+.splide__slide .common-padding {
+    position: relative;
+    z-index: 100;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.background-img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    scale: 100%;
+}
+
+.background-img::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 10;
+    content: '';
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.background-img img {
+    border-radius: 0;
+}
+
+#section-statement .splide__pagination {
+    padding-bottom: 2rem;
+}
+
+#section-nosotros .common-padding {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#section-nosotros .text-container {
+    padding: 2rem 0;
+}
+
+#section-servicios .splide__track {
+    max-width: 72%;
+    margin: 0 auto;
+}
+
+.li-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(220, 220, 220);
+    border-radius: 20px;
 }
 
 .section-servicio {

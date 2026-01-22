@@ -46,11 +46,11 @@
                 </nav>
             </div>
         </header>
-        <main>
+        <main id="main-homepage">
             <section id="section-statement" class="splide" aria-label="Statement splide">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide">
+                        <li class="splide__slide" data-splide-interval="10000">
                             <div class="common-padding">
                                 <div class="text-container">
                                     <h1>Comprometidos con la calidad</h1>
@@ -63,44 +63,143 @@
                                         </button>
                                     </a>
                                 </div>
-                                <picture class="background-img">
-                                    <source srcset="" media="(max-width: 992px)" type="image/webp">
-                                    <source srcset="" media="(min-width: 993px)" type="image/webp">
-                                    <img src="" alt="">
-                                </picture>
                             </div>
+                            <picture class="background-img">
+                                <source srcset="Imagenes/statement-bg-1-mobile.webp" media="(max-width: 992px)" type="image/webp">
+                                <source srcset="Imagenes/statement-bg-1.webp" media="(min-width: 993px)" type="image/webp">
+                                <img src="Imagenes/statement-bg-1-mobile.webp" alt="Tablero eléctrico siendo indepeccionado por un técnico electricista">
+                            </picture>
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" data-splide-interval="10000">
                             <div class="common-padding">
                                 <div class="text-container">
                                     <h1>Tu electricista de confianza</h1>
                                     <p>Trabajamos con responsabilidad y atención al detalle para que cada instalación eléctrica sea segura, funcional y duradera.</p>
                                 </div>
                                 <div class="button-container">
-                                    <a href="https://api.whatsapp.com/send?phone=541161106034">
+                                    <a href="#section-nosotros">
                                         <button class="call-to-action">
-                                            Contactarse
+                                            Nosotros
                                         </button>
                                     </a>
                                 </div>
-                                <picture class="background-img">
-                                    <source srcset="" media="(max-width: 992px)" type="image/webp">
-                                    <source srcset="" media="(min-width: 993px)" type="image/webp">
-                                    <img src="" alt="">
-                                </picture>
                             </div>
+                            <picture class="background-img">
+                                <source srcset="Imagenes/statement-bg-2-mobile.webp" media="(max-width: 992px)" type="image/webp">
+                                <source srcset="Imagenes/statement-bg-2.webp" media="(min-width: 993px)" type="image/webp">
+                                <img src="Imagenes/statement-bg-2-mobile.webp" alt="Tomacorrientes siendo reemplazado por un técnico electricista">
+                            </picture>
                         </li>
                     </ul>
                 </div>
             </section>
             <section id="section-nosotros">
                 <div class="common-padding">
-
+                    <div class="text-container">
+                        <span class="small-title">Nosotros</span>
+                        <h2>¿Quiénes somos?</h2>
+                        <p>Ofrecemos soluciones eléctricas para domicilios brindando un servicio de calidad, seguro y profesional. Nuestro objetivo consiste en generar soluciones eléctricas eficientes y duraderas, asegurando la seguridad de su instalación eléctrica.</p>
+                        <div class="button-container">
+                            <a href="Pages/nosotros.html">
+                                <button class="call-to-action">
+                                    Saber más
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <picture>
+                        <source srcset="Imagenes/profesional-mobile.webp" media="(max-width: 992px)" type="image/webp">
+                        <source srcset="Imagenes/profesional.webp" media="(min-width: 993px)" type="image/webp">
+                        <img src="Imagenes/profesional-mobile.webp" alt="Electricista profesional brindando mantenimiento a una instalación eléctrica">
+                    </picture>
                 </div>
             </section>
-            <section id="section-servicios">
+            <section id="section-servicios" class="splide">
                 <div class="common-padding">
-
+                    <span class="small-title">Soluciones</span>
+                    <h2>Nuestros servicios</h2>
+                </div>
+                <div class="splide__track common-padding">
+                    <ul class="splide__list">
+                        <li class="li-servicios splide__slide">
+                            <a href="Pages/tableros-electricos.html">
+                                <picture>
+                                    <source srcset="Imagenes/tableros-electricos-mobile.webp" media="(max-width: 992px)" type="image/webp">
+                                    <source srcset="Imagenes/tableros-electricos.webp" media="(max-width: 993px)" type="image/webp">
+                                    <img src="Imagenes/tableros-electricos-mobile.webp" alt="Tablero eléctrico siendo inspeccionado">
+                                </picture>
+                                <div class="text-container">
+                                    <h3>Tableros eléctricos</h3>
+                                    <p>Diseño, instalación y mantenimiento de tableros eléctricos que aseguran una instalación segura y un consumo adecuado.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="li-servicios splide__slide">
+                            <a href="Pages/llaves-y-tomacorrientes.html">
+                                <picture>
+                                    <source srcset="Imagenes/llaves-y-tomacorrientes-mobile.webp" media="(max-width: 992px)" type="image/webp">
+                                    <source srcset="Imagenes/llaves-y-tomacorrientes.webp" media="(max-width: 993px)" type="image/webp">
+                                    <img src="Imagenes/llaves-y-tomacorrientes-mobile.webp" alt="Tomacorrientes siendo reemplazado">
+                                </picture>
+                                <div class="text-container">
+                                    <h3>Llaves y tomacorrientes</h3>
+                                    <p>Realizamos mantenimiento e instalación de llaves y tomacorrientes.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="li-servicios splide__slide">
+                            <a href="Pages/colocacion-de-artefactos.html">
+                                <picture>
+                                    <source srcset="Imagenes/colocacion-de-artefactos-mobile.webp" media="(max-width: 992px)" type="image/webp">
+                                    <source srcset="Imagenes/colocacion-de-artefactos.webp" media="(max-width: 993px)" type="image/webp">
+                                    <img src="Imagenes/colocacion-de-artefactos-mobile.webp" alt="Lámpara colgante moderna">
+                                </picture>
+                                <div class="text-container">
+                                    <h3>Colocación de artefactos</h3>
+                                    <p>Nos encargamos de la colocación de artefactos eléctricos de todo tipo, como pueden ser luces, extractores y más.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="li-servicios splide__slide">
+                            <a href="Pages/mantenimiento.html">
+                                <picture>
+                                    <source srcset="Imagenes/mantenimiento-electrico-mobile.webp" media="(max-width: 992px)" type="image/webp">
+                                    <source srcset="Imagenes/mantenimiento-electrico.webp" media="(min-width: 993px)" type="image/webp">
+                                    <img src="Imagenes/mantenimiento-electrico-mobile.webp" alt="Tablero eléctrico siendo inspeccionado">
+                                </picture>
+                                <div class="text-container">
+                                    <h3>Mantenimiento eléctrico</h3>
+                                    <p>Realizamos mantenimiento general de instalaciones eléctricas, identificando y solucionando problemas existentes y futuros.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="li-servicios splide__slide">
+                            <a href="Pages/deteccion-de-cortocircuitos.html">
+                                <picture>
+                                    <source srcset="Imagenes/deteccion-de-cortocircuitos-mobile.webp" media="(max-width: 992px)" type="image/webp">
+                                    <source srcset="Imagenes/deteccion-de-cortocircuitos.webp" media="(max-width: 993px)" type="image/webp">
+                                    <img src="Imagenes/deteccion-de-cortocircuitos-mobile.webp" alt="Descarga eléctrica en forma de rayo">
+                                </picture>
+                                <div class="text-container">
+                                    <h3>Detección de cortocircuitos</h3>
+                                    <p>Detectamos cortocircuitos de manera rápida y segura, previniendo accidentes e incendios.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="li-servicios splide__slide">
+                            <a href="Pages/mediciones-de-consumo.html">
+                                <picture>
+                                    <source srcset="Imagenes/mediciones-de-consumo-mobile.webp" media="(max-width: 992px)" type="image/webp">
+                                    <source srcset="Imagenes/mediciones-de-consumo.webp" media="(max-width: 993px)" type="image/webp">
+                                    <img src="Imagenes/mediciones-de-consumo-mobile.webp" alt="Técnico eléctrico realizando una medición de consumo eléctrico">
+                                </picture>
+                                <div class="text-container">
+                                    <h3>Mediciones de consumo</h3>
+                                    <p>Realizamos mediciones de consumo que pueden detectar fallas o anomalías que impacten en tu bolsillo.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section id="section-trust">
@@ -193,11 +292,21 @@
         <script src="Scripts/hamburgerMenu.js"></script>
         <script src="splide-4.1.3/dist/js/splide.min.js"></script>
         <script>
-            new Splide( '.splide', {
+            new Splide( '#section-statement', {
                 type   : 'loop',
                 gap: '1rem',
                 pagination: boolean = true,
                 arrows: boolean = false,
+                autoplay: boolean = false,
+            } ).mount();
+        </script>
+        <script>
+            new Splide( '#section-servicios', {
+                type   : 'loop',
+                gap: '1rem',
+                pagination: boolean = true,
+                arrows: boolean = true,
+                autoplay: boolean = false,
             } ).mount();
         </script>
     </body>
