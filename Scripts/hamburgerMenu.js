@@ -18,7 +18,6 @@ function delay(seconds) {
 
 document.querySelectorAll(".nav-li-element").forEach(element => 
     element.addEventListener("click", async () => {
-        await delay(2000)
         hamburgerMenu.classList.remove("active");
         navMenu.classList.remove("active");
     }));

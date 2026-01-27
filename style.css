@@ -35,6 +35,10 @@ img {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     width: 100%;
     position: fixed;
@@ -160,6 +164,10 @@ h1 {
     font-size: 1.75rem;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
 section p {
     color: var(--lightGreyColor);
     font-family: var(--secondaryFont);
@@ -187,6 +195,7 @@ section p {
 
 .small-title {
     color: var(--greyColor);
+    font-weight: bold;
 }
 
 .small-title + h2 {
@@ -267,19 +276,108 @@ main {
     padding: 2rem 0;
 }
 
+#section-servicios {
+    background-color: var(--greyColor);
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+#section-servicios .common-padding {
+    padding-top: 5rem;
+}
+
+#section-servicios h2, 
+#section-servicios .small-title {
+    color: var(--whiteColor);
+}
+
 #section-servicios .splide__track {
     max-width: 72%;
     margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .li-servicios {
+    margin: 0 auto;
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.li-servicios a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
+    min-height: 425px;
+}
+
+.li-servicios h3 {
+    margin-bottom: 0.5rem;
+}
+
+.servicio-saber-mas {
+    display: block;
+    position: relative;
+    align-self: flex-end;
+    align-content: flex-end;
     margin: 0 auto;
-    background-color: rgb(220, 220, 220);
-    border-radius: 20px;
+    margin-top: auto;
+    font-weight: 600;
+}
+
+.servicio-saber-mas::after {
+    display: block;
+    content: '';
+    background-color: var(--strongColor);
+    height: 2px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+
+#section-servicios .splide__pagination {
+    padding-bottom: 2rem;
+}
+
+#section-trust .text-container {
+    padding-top: 4rem;
+}
+
+#section-trust h2 {
+    font-size: 2.5rem;
+    max-width: 12ch;
+    margin-left: 0;
+    line-height: 2.75rem;
+}
+
+#section-trust .colored-text {
+    color: var(--strongColor);
+}
+
+#ul-beneficios .title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 2.5rem 0 1rem;
+}
+
+#ul-beneficios .title-container svg, 
+#ul-beneficios .title-container h3 {
+    margin: 0;
+}
+
+#ul-beneficios .title-container svg {
+    width: 32px;
+    height: auto;
+}
+
+#ul-beneficios .title-container svg path {
+    fill: var(--strongColor);
 }
 
 .section-servicio {
