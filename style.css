@@ -725,14 +725,15 @@ footer hr {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 auto;
-        padding-top: 40px;
-        padding-bottom: 36px;
+        margin: 0 auto;    
+        padding-top: 56px;
+        padding-bottom: 54px;
         font-size: 1rem;
     }
 
     #header-logo {
-        width: 120px;
+        width: 220px;
+        padding: 8px 0;
     }
 
     #hamburguer-menu-icon {
@@ -752,23 +753,185 @@ footer hr {
     nav ul {
         flex-direction: row;
         margin: 0 auto;
+        padding: 0;
         gap: 36px;
     }
 
     .nav-li-element {
-        background: 
-           linear-gradient(currentColor 0 0) 
-           var(--d, 201%) 100% /200% 2px 
-           no-repeat;
-      }
-      
-    .nav-li-element:hover {
-        --d: -101%;
-        transition: 0.75s
+        max-width: 168px;
+        padding: 2.5rem 0;
     }
 
     nav ul a {
         font-size: 1.125rem;
+    }
+
+    .nav-li-element ul {
+        width: auto;
+        min-width: 12.5rem;
+        height: auto;
+        margin: 0;
+        padding: 2rem;
+        gap: 1.5rem;
+        background-color: var(--greyColor);
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        z-index: -100;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform .3s, visibility .3s, opacity .3s;
+    }
+
+    .nav-li-element:hover ul {
+        transform: scaleY(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #header-li-servicios a {
+        justify-content: left;
+    }
+
+    .nav-li-element:hover ul a {
+        color: var(--whiteColor);
+    }
+
+    .nav-li-element:hover a svg {
+        transform: rotate(180deg) translateY(0px);
+    }
+
+    .splide__slide .common-padding {
+        max-width: 80%;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+
+    .first-slide {
+        background-image: url(Imagenes/tableros-electricos.webp);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .second-slide {
+        background-image: url(Imagenes/llaves-y-tomacorrientes.webp);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .background-img {
+        display: none;
+    }
+    
+    #section-statement h1 {
+        font-size: 4rem;
+        max-width: 16ch;
+        line-height: 4.5rem;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    #section-statement p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        max-width: 50ch;
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    #section-nosotros .common-padding {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    #section-nosotros .text-container {
+        max-width: 50%;
+        text-align: left;
+    }
+
+    #section-nosotros img {
+        max-width: 70%;
+    }
+
+    #section-servicios .li-servicios a {
+        min-height: 450px;
+    }
+
+    #section-servicios .li-servicios img {
+        max-width: 320px;
+    }
+
+    #section-servicios .li-servicios .text-container {
+        max-width: 30ch;
+    }
+
+    #section-servicios .splide__arrow--prev {
+        left: 10em !important;
+    }
+
+    #section-servicios .splide__arrow--next {
+        right: 10em !important;
+    }
+
+    #section-trust .common-padding {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    #section-trust .text-container {
+        max-width: 50%;
+    }
+
+    #section-trust h2 {
+        max-width: none;
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+    #section-trust h3 {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    #ul-beneficios .title-container svg {
+        width: 40px;
+    }
+
+    #contactanos-statement .common-padding {
+        max-width: none;
+    }
+
+    #ul-medios-de-contacto {
+        flex-direction: row;
+        justify-content: center;
+        gap: 8rem;
+        margin: 0 auto;
+    }
+
+    #ul-medios-de-contacto li {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #contactanos-medios h2 {
+        font-size: 1.75rem;
     }
 
     footer .common-padding {
@@ -788,7 +951,7 @@ footer hr {
     }
 
     #footer-div-top-logo {
-        max-width: 30%;
+        max-width: none;
     }
 
     .footer-section {
@@ -797,6 +960,18 @@ footer hr {
 
     #footer-top-seguinos ul {
         text-align: left;
+    }
+
+    footer h4 {
+        font-size: 0.875rem;
+    }
+
+    footer p, footer span{
+        font-size: 0.75rem;
+    }
+
+    #footer-div-top-contacto li {
+        margin-bottom: 0;
     }
 
     footer hr {

@@ -101,7 +101,7 @@
             <section id="section-statement" class="splide" aria-label="Statement splide">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide" data-splide-interval="10000">
+                        <li class="splide__slide first-slide" data-splide-interval="10000">
                             <div class="common-padding">
                                 <div class="text-container">
                                     <h1>Comprometidos con la calidad</h1>
@@ -121,7 +121,7 @@
                                 <img src="Imagenes/statement-bg-1-mobile.webp" alt="Tablero eléctrico siendo indepeccionado por un técnico electricista">
                             </picture>
                         </li>
-                        <li class="splide__slide" data-splide-interval="10000">
+                        <li class="splide__slide second-slide" data-splide-interval="10000">
                             <div class="common-padding">
                                 <div class="text-container">
                                     <h1>Su electricista de confianza</h1>
@@ -258,6 +258,20 @@
                                 <div class="servicio-saber-mas">Saber más</div>
                             </a>
                         </li>
+                        <li class="li-servicios splide__slide">
+                            <a href="Pages/recableado.html">
+                                <picture>
+                                    <source srcset="Imagenes/recableado-mobile.webp" media="(max-width: 992px)" type="image/webp">
+                                    <source srcset="Imagenes/recableado.webp" media="(max-width: 993px)" type="image/webp">
+                                    <img src="Imagenes/recableado-mobile.webp" alt="Cables eléctricos">
+                                </picture>
+                                <div class="text-container">
+                                    <h3>Recableado</h3>
+                                    <p>Realizamos el recableado de su instalación eléctrica de manera apropiada y con materiales de calidad.</p>
+                                </div>
+                                <div class="servicio-saber-mas">Saber más</div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -265,7 +279,7 @@
                 <div class="common-padding">
                     <div class="text-container">
                         <h2>
-                            Un servicio de <span class="colored-text">calidad</span>
+                            Un servicio de <span class="colored-text">calidad</span>.
                         </h2>
                         <p>
                             En cada hogar, la electricidad es más que cables y enchufes: es seguridad y confort. Por eso, nuestro compromiso va más allá de reparar una instalación: se trata de proteger lo que más importa.
@@ -497,7 +511,13 @@
                 pagination: boolean = true,
                 arrows: boolean = true,
                 autoplay: boolean = false,
-            } ).mount();
+                mediaQuery: 'min',
+                breakpoints: {
+                        992: {
+                            perPage: 4,
+                        }
+                    }
+                } ).mount();
         </script>
     </body>
 </html>

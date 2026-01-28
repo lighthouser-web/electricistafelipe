@@ -14,7 +14,9 @@ hamburgerMenu.addEventListener("click", () => {
 });
 
 navLiServicios.addEventListener("click", () => {
-    navLiServicios.classList.toggle("active");
+    if (! window.matchMedia('(min-width: 996px)').matches) {
+        navLiServicios.classList.toggle("active");
+    }
 })
 
 function delay(seconds) {
