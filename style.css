@@ -400,6 +400,10 @@ main {
     padding-bottom: 2rem;
 }
 
+#section-trust .common-padding {
+    max-width: 80%;
+}
+
 #section-trust .text-container {
     padding-top: 4rem;
 }
@@ -411,7 +415,8 @@ main {
     line-height: 2.75rem;
 }
 
-#section-trust .colored-text {
+#section-trust .colored-text,
+.colored-text {
     color: var(--strongColor);
 }
 
@@ -470,6 +475,20 @@ main {
     text-align: center;
 }
 
+.section-productos-relacionados h2 {
+    font-size: 1.75rem;
+    line-height: 3rem;
+    padding: 1rem 0;
+}
+
+.section-productos-relacionados h2::after {
+    display: block;
+    content: '';
+    background-color: var(--strongColor);
+    width: 78%;
+    height: 3px;
+}
+
 .li-productos-relacionados img {
     border-radius: 20px;
 }
@@ -514,10 +533,19 @@ main {
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 23%, rgba(237, 237, 237, 1) 78%, rgba(230, 230, 230, 1) 100%);
 }
 
-#contactanos-statement h1 {
+#contactanos-statement .text-container {
+    text-align: center;
+}
+
+#contactanos-statement h2 {
     font-size: 3rem;
     text-align: center;
     max-width: 12ch;
+}
+
+#contactanos-statement p {
+    max-width: 70%;
+    margin-bottom: 1rem;
 }
 
 #contactanos-medios {
@@ -766,6 +794,12 @@ footer hr {
         font-size: 1.125rem;
     }
 
+    .nav-li-element a:hover, 
+    #header-li-servicios ul li a:hover {
+        color: var(--strongColor);
+        transition: color 0.2s ease-in-out;
+    }
+
     .nav-li-element ul {
         width: auto;
         min-width: 12.5rem;
@@ -810,14 +844,14 @@ footer hr {
     }
 
     .first-slide {
-        background-image: url(Imagenes/tableros-electricos.webp);
+        background-image: url(Imagenes/statement-bg-1.webp);
         background-position: right;
         background-repeat: no-repeat;
         background-size: 100%;
     }
 
     .second-slide {
-        background-image: url(Imagenes/llaves-y-tomacorrientes.webp);
+        background-image: url(Imagenes/statement-bg-2.webp);
         background-position: right;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -833,6 +867,7 @@ footer hr {
         line-height: 4.5rem;
         margin: 0;
         padding: 1rem 0;
+        text-shadow: 0 0 12px var(--greyColor);
     }
 
     #section-statement p {
@@ -840,6 +875,7 @@ footer hr {
         line-height: 2rem;
         max-width: 50ch;
         margin-left: 0;
+        text-shadow: 0 0 16px var(--greyColor);
     }
 
     h2 {
@@ -918,6 +954,11 @@ footer hr {
         max-width: none;
     }
 
+    #contactanos-statement .text-container h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    
     #ul-medios-de-contacto {
         flex-direction: row;
         justify-content: center;
@@ -934,6 +975,74 @@ footer hr {
         font-size: 1.75rem;
     }
 
+    #section-nosotros-page {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #section-nosotros-page .common-padding section:first-child {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #section-nosotros-page .common-padding section {
+        flex-direction: row;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    #section-nosotros-page .text-container {
+        max-width: 50%;
+    }
+
+    #section-nosotros-page .common-padding img {
+        min-width: 350px;
+        max-width: 450px;
+    }
+
+    .section-servicio h1 {
+        font-size: 2.75rem;
+    }
+
+    .section-servicio .common-padding {
+        flex-direction: row-reverse;
+        padding-top: 4rem;
+        align-items: flex-start;
+    }
+
+    .section-servicio .text-container {
+        max-width: 60%;
+    }
+
+    .section-servicio img {
+        max-width: 90%;
+    }
+
+    .section-productos-relacionados h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+        padding: 2rem 0;
+    }
+
+    .section-productos-relacionados h2::after {
+        width: 27%;
+        height: 4px;
+    }
+
+    .section-productos-relacionados .splide__track {
+        padding-bottom: 3rem;
+    }
+
+    .section-productos-relacionados .splide__arrow.splide__arrow--prev svg {
+        position: absolute;
+        right: inherit !important;
+    }
+    
+    .section-productos-relacionados .splide__arrow.splide__arrow--next svg {
+        position: absolute;
+        left: inherit !important;
+    }
+
     footer .common-padding {
         padding-bottom: 0;
     }
@@ -943,6 +1052,10 @@ footer hr {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
+    }
+
+    #footer-div-top picture {
+        padding: 0;
     }
 
     #footer-div-top > * {
@@ -967,7 +1080,8 @@ footer hr {
     }
 
     footer p, footer span{
-        font-size: 0.75rem;
+        font-size: 1rem;
+        line-height: 1.75rem;
     }
 
     #footer-div-top-contacto li {

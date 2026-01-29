@@ -16,10 +16,10 @@
             <div id="header-div">
                 <div id="header-top">
                     <a href="../index.html">
-                        <picture>
-                            <source srcset="../Imagenes/Marca/electricista-felipe-logo-mobile.png" media="(max-width: 992px)" type="image/webp">
+                        <picture >
+                            <source srcset="../Imagenes/Marca/electricista-felipe-logo.png" media="(max-width: 992px)" type="image/webp">
                             <source srcset="../Imagenes/Marca/electricista-felipe-logo.png" media="(min-width: 993px)" type="image/webp">
-                            <img id="header-logo" src="../Imagenes/Marca/electricista-felipe-logo-mobile.png" alt="Logo de Electricista Felipe">
+                            <img id="header-logo" src="../Imagenes/Marca/electricista-felipe-logo.png" alt="Logo de Electricista Felipe">
                         </picture>
                     </a>
                     <div id="hamburguer-menu-icon">
@@ -267,7 +267,7 @@
                         </ul>
                     </div>
                 </div>
-                <p id="footer-p-copyright">© Copyright 2025 - 
+                <p id="footer-p-copyright">© Copyright 2026 - 
                     <a href="https://lighthouser.com.ar">
                         Sitio web diseñado y desarrollado por Lighthouser
                     </a>
@@ -291,6 +291,12 @@
                 perPage: 2,
                 gap: '1rem',
                 pagination: boolean = false,
+                mediaQuery: 'min',
+                breakpoints: {
+                        992: {
+                            perPage: 4,
+                        }
+                    }
             } ).mount();
         </script>
     </body>
