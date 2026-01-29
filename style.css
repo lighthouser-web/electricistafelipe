@@ -260,12 +260,49 @@ section p {
     margin-top: 0.25rem;
 }
 
+.moving-text {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s ease-in-out;
+}
+
+.moving-text.visible {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.fade-in-element {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.button-container.fade-in-element {
+    transition: all 1s ease-in-out 1s;
+}
+
+.fade-in-element.visible {
+    opacity: 1;
+}
+
+.colored-text {
+    color: inherit;
+    transition: all 0.5s ease-in-out 0.5s;
+}
+
+.colored-text.visible {
+    color: var(--strongColor);
+}
+
 main {
     margin-top: 100px;
 }
 
 #main-homepage {
     margin-top: 60px;
+}
+
+#section-statement {
+    text-align: left;
 }
 
 #section-statement h1, #section-statement p {
@@ -275,6 +312,7 @@ main {
 #section-statement h1 {
     font-size: 2.5rem;
     line-height: 3rem;
+    text-shadow: 0 0 12px var(--greyColor);
 }
 
 #section-statement p {
@@ -282,6 +320,7 @@ main {
     line-height: 1.5rem;
     max-width: 32ch;
     margin-left: 0;
+    text-shadow: 0 0 16px var(--greyColor);
 }
 
 #section-statement .button-container {
@@ -413,11 +452,6 @@ main {
     max-width: 12ch;
     margin-left: 0;
     line-height: 2.75rem;
-}
-
-#section-trust .colored-text,
-.colored-text {
-    color: var(--strongColor);
 }
 
 #ul-beneficios .title-container {
@@ -1092,5 +1126,9 @@ footer hr {
         display: none;
         border: solid 1px rgb(61, 61, 61);
         width: 70%;
+    }
+
+    .colored-text {
+        transition: all 0.5s ease-in-out 1s;
     }
 }

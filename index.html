@@ -104,10 +104,10 @@
                         <li class="splide__slide first-slide" data-splide-interval="10000">
                             <div class="common-padding">
                                 <div class="text-container">
-                                    <h1>Comprometidos con la calidad</h1>
-                                    <p>Trabajamos con responsabilidad y atención al detalle para que cada instalación eléctrica sea segura, funcional y duradera.</p>
+                                    <h1 class="moving-text">Comprometidos<br>con la calidad</h1>
+                                    <p class="moving-text">Trabajamos con responsabilidad y atención al detalle para que cada instalación eléctrica sea segura, funcional y duradera.</p>
                                 </div>
-                                <div class="button-container">
+                                <div class="button-container fade-in-element">
                                     <a href="https://api.whatsapp.com/send?phone=541161106034">
                                         <button class="call-to-action">
                                             Contactarse
@@ -124,12 +124,12 @@
                         <li class="splide__slide second-slide" data-splide-interval="10000">
                             <div class="common-padding">
                                 <div class="text-container">
-                                    <h1>Su electricista de confianza</h1>
-                                    <p>
+                                    <h1 class="moving-text">Su electricista<br>de confianza</h1>
+                                    <p class="moving-text">
                                         Garantizamos un trabajo profesional impecable, para funcionamiento inmediato y tranquilidad duradera.
                                     </p>
                                 </div>
-                                <div class="button-container">
+                                <div class="button-container fade-in-element">
                                     <a href="#section-nosotros">
                                         <button class="call-to-action">
                                             Nosotros
@@ -151,8 +151,8 @@
                     <div class="text-container">
                         <span class="small-title">Nosotros</span>
                         <h2>¿Quiénes somos?</h2>
-                        <p>Ofrecemos soluciones eléctricas para domicilios brindando un servicio de calidad, seguro y profesional. Nuestro objetivo consiste en generar soluciones eléctricas eficientes y duraderas, asegurando la seguridad de su instalación eléctrica.</p>
-                        <div class="button-container">
+                        <p class="moving-text">Somos profesionales que ofrecemos soluciones eléctricas para domicilios brindando un servicio de calidad, seguro y profesional. Nuestro objetivo consiste en generar soluciones eléctricas eficientes y duraderas, asegurando la seguridad de su instalación eléctrica.</p>
+                        <div class="button-container fade-in-element">
                             <a href="Pages/nosotros.html">
                                 <button class="call-to-action">
                                     Saber más
@@ -286,7 +286,7 @@
                         </p>
                     </div>
                     <ul id="ul-beneficios">
-                        <li> 
+                        <li class="moving-text fade-in-element"> 
                             <div class="title-container">
                                 <svg
                                     width="24"
@@ -303,7 +303,7 @@
                                 Somos profesionales correctamente capacitados, garantizando que cada intervención cumple con los estándares más rigurosos
                             </p>
                         </li>
-                        <li> 
+                        <li class="moving-text fade-in-element"> 
                             <div class="title-container">
                                 <svg
                                     width="24"
@@ -320,7 +320,7 @@
                                 Realizamos una evaluación integral que no solo resuelve el problema actual, sino que previene futuras incidencias, garantizando eficiencia y seguridad a largo plazo.
                             </p>
                         </li>
-                        <li> 
+                        <li class="moving-text fade-in-element"> 
                             <div class="title-container">
                                 <svg
                                     width="24"
@@ -345,9 +345,9 @@
                     <div class="text-container">
                         <span class="small-title">Contacto</span>
                         <h2>Contáctenos hoy mismo</h2>
-                        <p>Obtenga la solución a su problema eléctrica de manera rápida y eficaz. Su consulta no molesta.</p>
+                        <p>Obtenga la solución a su problema eléctrico de manera rápida y eficaz. Su consulta no molesta.</p>
                     </div>
-                    <div class="button-container">
+                    <div class="button-container fade-in-element">
                         <a href="https://api.whatsapp.com/send?phone=541161106034">
                             <button class="call-to-action">
                                 Contactarse
@@ -496,6 +496,7 @@
             </button>
          </div>
         <script src="Scripts/hamburgerMenu.js"></script>
+        <script src="Scripts/movingText.js"></script>
         <script src="splide-4.1.3/dist/js/splide.min.js"></script>
         <script>
             new Splide( '#section-statement', {
@@ -503,7 +504,7 @@
                 gap: '1rem',
                 pagination: boolean = true,
                 arrows: boolean = false,
-                autoplay: boolean = false,
+                autoplay: boolean = true,
             } ).mount();
         </script>
         <script>
