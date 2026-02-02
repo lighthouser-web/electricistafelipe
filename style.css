@@ -212,14 +212,17 @@ body {
     padding: 0 4%;
 }
 
-h1, h2, h3, .small-title {
+h1, h2, h3, .small-title, .h1-simil-span {
     font-family: var(--primaryFont);
     margin: 1rem auto;
     color: var(--blackColor);
 }
 
-h1 {
+h1, .h1-simil-span {
+    display: block;
     font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 h2 {
@@ -305,11 +308,13 @@ main {
     text-align: left;
 }
 
-#section-statement h1, #section-statement p {
+#section-statement h1, #section-statement p,
+#section-statement .h1-simil-span {
     color: var(--whiteColor);
 }
 
-#section-statement h1 {
+#section-statement h1, 
+#section-statement .h1-simil-span {
     font-size: 2.5rem;
     line-height: 3rem;
     text-shadow: 0 0 12px var(--greyColor);
@@ -371,6 +376,43 @@ main {
 
 #section-nosotros .text-container {
     padding: 2rem 0;
+}
+
+#section-nosotros .colored-text {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+#section-nosotros ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2.25rem 1rem 1.5rem;
+}
+
+#section-nosotros li {
+    position: relative;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--whiteColor);
+    box-shadow: 0 2px 8px rgb(214, 214, 214);
+    border-radius: 20px;
+    transform: translateY(0);
+    transition: all 0.2s ease-in-out;
+}
+
+#section-nosotros li:hover {
+    background-color: var(--strongColor);
+    transform: translateY(-8px);
+}
+
+#section-nosotros li:hover h3 {
+    color: var(--whiteColor);
+    transition: all 0.2s ease-in-out;
+}
+
+#section-nosotros h3 {
+    line-height: 1.5rem;
 }
 
 #section-servicios {
@@ -895,7 +937,8 @@ footer hr {
         display: none;
     }
     
-    #section-statement h1 {
+    #section-statement h1, 
+    #section-statement .h1-simil-span {
         font-size: 4rem;
         max-width: 16ch;
         line-height: 4.5rem;
@@ -907,21 +950,20 @@ footer hr {
     #section-statement p {
         font-size: 1.25rem;
         line-height: 2rem;
-        max-width: 50ch;
+        max-width: 40ch;
         margin-left: 0;
         text-shadow: 0 0 16px var(--greyColor);
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2.75rem;
     }
 
     #section-nosotros .common-padding {
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        gap: 4rem;
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
@@ -933,6 +975,10 @@ footer hr {
 
     #section-nosotros img {
         max-width: 70%;
+    }
+
+    #section-nosotros .button-container {
+        text-align: center;
     }
 
     #section-servicios .li-servicios a {
