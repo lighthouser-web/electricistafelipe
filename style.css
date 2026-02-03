@@ -784,6 +784,11 @@ footer ul li {
     transition: all 0.2s ease;
 }
 
+#tiktok-logo-footer svg {
+    width: 1.625rem;
+    padding-top: 0.175rem;
+}
+
 footer hr {
     color: initial;
 }
@@ -981,12 +986,29 @@ footer hr {
         text-align: center;
     }
 
+    #section-servicios {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    #section-servicios .li-servicios h3 {
+        font-size: 1.5rem;
+    }
+
+    #servicio-tableros-electricos-h3 {
+        max-width: 9ch;
+    }
+
+    #servicio-recableado-electrico-h3 {
+        max-width: 10ch;
+    }
+
     #section-servicios .li-servicios a {
-        min-height: 450px;
+        min-height: 540px;
     }
 
     #section-servicios .li-servicios img {
-        max-width: 320px;
+        max-width: 400px;
     }
 
     #section-servicios .li-servicios .text-container {
