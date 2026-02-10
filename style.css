@@ -828,6 +828,55 @@ footer hr {
     fill: var(--whiteColor);
 }
 
+main.articulo {
+    margin-top: 120px;
+}
+
+.articulo h1 {
+    font-size: 2rem;
+}
+
+.articulo .author-and-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.articulo h2 {
+    margin-top: 1.75rem;
+    font-size: 1.75rem;
+}
+
+.articulo p {
+    margin-bottom: 1rem;
+}
+
+ul.bp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--lightGreyColor);
+    line-height: 1.75rem;
+    list-style-type: disc;
+    padding: 1.25rem 0 1.25rem 2rem;
+}
+
+ul.bp-list li {
+    margin-left: 0;
+}
+
+.articulo a {
+    color: rgb(42, 113, 255);
+    font-weight: bold;
+}
+
+.articulo a:hover {
+    text-decoration: underline;
+    color: var(--secondaryColor);
+}
+
 @media (min-width: 992px) {
     #header-div {
         width: 80%;
