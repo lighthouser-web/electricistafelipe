@@ -708,7 +708,7 @@ footer a:hover {
 #footer-div-top-logo {
     margin: 0;
     padding: 1rem 0;
-    max-width: 80%;
+    width: 300px;
     height: auto;
     align-self: left;
     border-radius: 0;
@@ -729,11 +729,12 @@ footer a:hover {
     line-height: 1rem;
 }
 
-footer h4 {
+footer h4, footer h2 {
     font-size: 1.125rem;
     line-height: 1.25rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    color: var(--whiteColor);
 }
 
 footer p {
@@ -1166,7 +1167,7 @@ footer hr {
     }
 
     #footer-div-top-logo {
-        max-width: none;
+        padding-right: 3rem;
     }
 
     .footer-section {
@@ -1177,7 +1178,7 @@ footer hr {
         text-align: left;
     }
 
-    footer h4 {
+    footer h4, footer h2 {
         font-size: 0.875rem;
     }
 
