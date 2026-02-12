@@ -828,20 +828,21 @@ footer hr {
     fill: var(--whiteColor);
 }
 
-main.articulo {
-    margin-top: 120px;
+.articulo-top {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.autor-y-fecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
 }
 
 .articulo h1 {
     font-size: 2rem;
-}
-
-.articulo .author-and-date {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 0;
-    margin-right: 0;
 }
 
 .articulo h2 {
@@ -851,6 +852,10 @@ main.articulo {
 
 .articulo p {
     margin-bottom: 1rem;
+}
+
+.autor-y-fecha span {
+    margin: 0;
 }
 
 ul.bp-list {
@@ -869,7 +874,6 @@ ul.bp-list li {
 
 .articulo a {
     color: rgb(42, 113, 255);
-    font-weight: bold;
 }
 
 .articulo a:hover {
@@ -877,7 +881,15 @@ ul.bp-list li {
     color: var(--secondaryColor);
 }
 
+.articulo-nav {
+    display: none;
+}
+
 @media (min-width: 992px) {
+    header {
+        position: static;
+    }
+
     #header-div {
         width: 80%;
         max-width: 90rem;
@@ -1195,6 +1207,10 @@ ul.bp-list li {
         left: inherit !important;
     }
 
+    .footer-articulo {
+        margin-top: 6rem;
+    }
+
     footer .common-padding {
         padding-bottom: 0;
     }
@@ -1248,5 +1264,86 @@ ul.bp-list li {
 
     .colored-text {
         transition: all 0.5s ease-in-out 1s;
+    }
+
+    section.articulo .common-padding {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 4rem;
+    }
+
+    .articulo-main {
+        margin-top: 2rem;
+    }
+
+    .articulo-top, .article-sub-section {
+        display: inline-block;
+    } 
+
+    .autor-y-fecha {
+        font-size: 1rem;
+    }
+
+    .articulo h1 {
+        font-size: 3.5rem;
+    }
+
+    .articulo h2 {
+        font-size: 2.75rem;
+    }
+
+    .articulo h3 {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+
+    .articulo p, ul.bp-list {
+        font-size: 1.125rem;
+    }
+
+    .articulo-contenido {
+        width: 70%;
+    }
+
+    .articulo-nav {
+        position: sticky;
+        top: 5rem;
+        gap: 1rem;
+        display: block;
+        margin: 2rem 0;
+        border-right: 1px solid #d0d0d0;
+    }
+
+    .articulo-nav-title {
+        font-weight: bold;
+        padding-left: 2rem;
+    }
+
+    .articulo-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .articulo-nav ul li {
+        margin: 0;
+        padding: 0.25rem 4rem 0.25rem 2rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .articulo-nav ul li a {
+        color: var(--greyColor);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .articulo-nav ul li.current {
+        background-color: rgb(236, 236, 236);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .articulo-nav ul li.current a {
+        color: var(--secondaryColor);
+        transition: all 0.2s ease-in-out;
     }
 }
