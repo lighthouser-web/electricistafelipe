@@ -1290,6 +1290,7 @@ td {
 
     footer h4, footer h2 {
         font-size: 0.875rem;
+        margin-top: 0;
     }
 
     footer p, footer span{
