@@ -932,7 +932,7 @@ td {
 
 @media (min-width: 992px) {
     header.static {
-        position: static;
+        position: relative;
     }
 
     #header-div {
