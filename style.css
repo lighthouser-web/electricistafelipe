@@ -1446,6 +1446,10 @@ td {
         margin-bottom: 1rem;
     }
 
+    #main-articulos-index {
+        margin-top: 30px;
+    }
+
     #section-articulos-index h1 {
         font-size: 2.5rem;
     }
