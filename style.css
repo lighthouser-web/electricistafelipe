@@ -828,6 +828,10 @@ footer hr {
     fill: var(--whiteColor);
 }
 
+.articulo-main {
+    margin-top: 72px;
+}
+
 .articulo-top {
     padding-top: 1rem;
     margin-bottom: 2rem;
@@ -888,11 +892,11 @@ section.legal a:hover {
 }
 
 a.disclaimer-link {
-    color: var(--greyColor);
+    color: var(--lightGreyColor);
 }
 
 a.disclaimer-link:hover {
-    color: var(--greyColor);
+    color: var(--lightGreyColor);
     text-decoration: none;
 }
 
