@@ -872,11 +872,13 @@ ul.bp-list li {
     margin-left: 0;
 }
 
-.articulo a {
+.articulo a, 
+section.legal a {
     color: rgb(42, 113, 255);
 }
 
-.articulo a:hover {
+.articulo a:hover, 
+section.legal a:hover {
     text-decoration: underline;
     color: var(--secondaryColor);
 }
@@ -885,8 +887,51 @@ ul.bp-list li {
     display: none;
 }
 
+a.disclaimer-link {
+    color: var(--greyColor);
+}
+
+a.disclaimer-link:hover {
+    color: var(--greyColor);
+    text-decoration: none;
+}
+
+.div-blog-disclaimer {
+    width: 100%;
+    background-color: rgb(255, 198, 198);
+    border: solid 1px rgb(255, 93, 93);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.div-blog-disclaimer .top {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.div-blog-disclaimer .top svg, 
+.div-blog-disclaimer .top span {
+    margin: 0;
+}
+
+.div-blog-disclaimer .top span {
+    font-weight: bold;
+}
+
+tr {
+    margin: 2rem 1rem;
+    line-height: 1.5rem;
+}
+
+td {
+    padding: 1rem;
+}
+
 @media (min-width: 992px) {
-    header {
+    header.static {
         position: static;
     }
 
@@ -1345,5 +1390,23 @@ ul.bp-list li {
     .articulo-nav ul li.current a {
         color: var(--secondaryColor);
         transition: all 0.2s ease-in-out;
+    }
+
+    section.legal h1 {
+        font-size: 3rem;
+    }
+
+    section.legal h2 {
+        margin-top: 2rem;
+    }
+
+    section.legal p, 
+    section.legal li {
+        font-size: 1.125rem;
+        color: var(--lightGreyColor);
+    }
+
+    section.legal p {
+        margin-bottom: 1rem;
     }
 }
