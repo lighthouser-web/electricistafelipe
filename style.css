@@ -1072,14 +1072,14 @@ td {
     }
 
     .first-slide {
-        background-image: url(Imagenes/statement-bg-1.webp);
+        background-image: url(Imagenes/statement-bg-2.webp);
         background-position: right;
         background-repeat: no-repeat;
         background-size: 100%;
     }
 
     .second-slide {
-        background-image: url(Imagenes/statement-bg-2.webp);
+        background-image: url(Imagenes/statement-bg-1.webp);
         background-position: right;
         background-repeat: no-repeat;
         background-size: 100%;
