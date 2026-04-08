@@ -1203,9 +1203,14 @@ td {
         max-width: none;
     }
 
+    #contacto-page #contactanos-statement .text-container h2,
     #contactanos-statement .text-container h2 {
         font-size: 3rem;
         line-height: 3.5rem;
+    }
+
+    #contacto-page #contactanos-statement .text-container h2 {
+        max-width: 22ch;
     }
     
     #ul-medios-de-contacto {
