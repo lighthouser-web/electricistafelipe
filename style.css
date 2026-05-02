@@ -959,6 +959,11 @@ td {
     margin: 1rem 0;
 }
 
+.hr-fin-articulo {
+    margin: 3rem 8px 2rem;
+    border: 1px solid #d0d0d0;
+}
+
 @media (min-width: 992px) {
     header.static {
         position: relative;
@@ -1067,14 +1072,14 @@ td {
     }
 
     .first-slide {
-        background-image: url(Imagenes/statement-bg-1.webp);
+        background-image: url(Imagenes/statement-bg-2.webp);
         background-position: right;
         background-repeat: no-repeat;
         background-size: 100%;
     }
 
     .second-slide {
-        background-image: url(Imagenes/statement-bg-2.webp);
+        background-image: url(Imagenes/statement-bg-1.webp);
         background-position: right;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -1087,7 +1092,7 @@ td {
     #section-statement h1, 
     #section-statement .h1-simil-span {
         font-size: 4rem;
-        max-width: 16ch;
+        max-width: 18ch;
         line-height: 4.5rem;
         margin: 0;
         padding: 1rem 0;
@@ -1198,9 +1203,14 @@ td {
         max-width: none;
     }
 
+    #contacto-page #contactanos-statement .text-container h2,
     #contactanos-statement .text-container h2 {
         font-size: 3rem;
         line-height: 3.5rem;
+    }
+
+    #contacto-page #contactanos-statement .text-container h2 {
+        max-width: 22ch;
     }
     
     #ul-medios-de-contacto {
@@ -1462,5 +1472,21 @@ td {
 
     .articulo-en-indice {
         padding: 1.5rem;
+    }
+
+    .ul-otros-articulos {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 2rem;
+    }
+    
+    .ul-otros-articulos li {
+        max-width: 40%;
+        margin: 0;
+    }
+
+    .ul-otros-articulos li h2 {
+        font-size: 2rem;
     }
 }
